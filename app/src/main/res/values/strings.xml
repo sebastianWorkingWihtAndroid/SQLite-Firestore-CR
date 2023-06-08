@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Record UNICORDOBA</string>
+    <string name="registrarse">registrarse</string>
+
+    <string-array name="departamento">
+        <item>Córdoba</item>
+    </string-array>
+
+
+    <string-array name="municipio">
+        <item>Montería</item>
+        <item>Valencia</item>
+        <item>Tierra Alta</item>
+        <item>Planeta Rica</item>
+        <item>Montelíbano</item>
+        <item>Chimá</item>
+        <item>Cotorra</item>
+        <item>Canalete</item>
+        <item>Tuchín</item>
+        <item>Cereté</item>
+        <item>Lorica</item>
+        <item>Moñitos</item>
+        <item>Chinú</item>
+    </string-array>
+
+    <string-array name="actividad">
+        <item>Agroecosistemas - Hortaliza</item>
+        <item>Agroecosistemas - Gallina</item>
+        <item>Plátano</item>
+        <item>Piscícola</item>
+        <item>Ovino</item>
+        <item>Bovino</item>
+    </string-array>
+
+    <string-array name="sifirma">
+        <item>Si</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="sisfirma">
+        <item>Si</item>
+        <item>No</item>
+    </string-array>
+
+
+</resources>

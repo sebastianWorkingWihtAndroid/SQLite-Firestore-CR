@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/actualizacontra"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#2196F3"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+
+    <TextView
+        android:id="@+id/font_family1"
+        android:layout_width="334dp"
+        android:layout_height="39dp"
+
+        android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center|center_horizontal"
+        android:text="FIRMA DIGITAL"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.adopta.lienzo
+        android:id="@+id/lienzo"
+        android:layout_width="0dp"
+        android:layout_height="206dp"
+
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_weight="5"
+        android:background="#FFFFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/font_family1" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#3AA0F1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/calcelar"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#E7082D"
+            android:drawableLeft="@drawable/ic_baseline_close_24"
+            android:text="salir"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/limpiarpantalla"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#ED9C28"
+            android:drawableStart="@drawable/ic_baseline_restore_from_trash_24"
+            android:text="limpiar"
+            android:textColor="@color/white" />
+
+
+        <Button
+            android:id="@+id/guarddarfirma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#4040FF"
+            android:drawableLeft="@drawable/ic_baseline_save_24"
+            android:scrollbarTrackVertical="@drawable/ic_baseline_save_24"
+            android:text="Guardar"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

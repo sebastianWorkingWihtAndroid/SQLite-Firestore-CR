@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "379502927368",
+    "project_id": "adoptar-95957",
+    "storage_bucket": "adoptar-95957.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:379502927368:android:9be924e3213a49fecebbbd",
+        "android_client_info": {
+          "package_name": "com.example.adopta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "379502927368-s6hio7uaig480b8non9cfskr0lq8sb7q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVkwRglq6Qc92jwFiUrU-wEcFZN5wOMps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "379502927368-s6hio7uaig480b8non9cfskr0lq8sb7q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

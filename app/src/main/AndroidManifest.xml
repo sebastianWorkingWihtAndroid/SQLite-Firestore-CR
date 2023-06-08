@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.adopta">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission
+        android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="QueryAllPackagesPermission" />
+
+    <application
+        android:allowBackup="true"
+        android:configChanges="screenSize|orientation"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppMVZ"
+        tools:targetApi="31">
+        
+        <activity android:name="com.example.adopta.SplashScreenActivity"
+            android:exported="true"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/file_paths" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.adopta.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name="com.example.adopta.VistaVisitas"
+            android:exported="false" />
+        <activity
+            android:name="com.example.adopta.generarPDF"
+            android:configChanges="screenSize|orientation"
+            android:exported="false" />
+        <activity
+            android:name="com.example.adopta.insercion"
+            android:configChanges="screenSize|orientation"
+            android:exported="false" />
+        <activity
+            android:name="com.example.adopta.Vista"
+            android:exported="false" />
+        <activity
+            android:name="com.example.adopta.Consulta"
+            android:exported="false" />
+        <activity
+            android:name="com.example.adopta.HomeActivity"
+            android:configChanges="screenSize|orientation"
+            android:exported="false" />
+        <activity
+            android:name="com.example.adopta.login"
+            android:exported="false" />
+        <activity
+            android:name="com.example.adopta.MainActivity"
+            android:exported="true">
+
+        </activity>
+    </application>
+
+</manifest>
